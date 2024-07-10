@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domos | Linktree</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #05201c;
+            color: #fafbfd;
+        }
+
+        @media screen and (max-width: 768px) {
+            body #upper-diagonal img {
+                width: 100vw;
+                height: auto;
+            }
+            body #lower-diagonal  img {
+                width: 100vw;
+                height: auto;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            body #upper-diagonal img {
+                width: 50vw;
+                height: auto;
+            }
+            body #lower-diagonal img {
+                width: 50vw;
+                height: auto;
+            }
+        }
+
+        body #upper-diagonal img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        body #lower-diagonal img {
+            transform: scale(-1);
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        body #wrapper {
+            min-height: 100vh;
+            max-width: 720px;
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        body #wrapper .header {
+            padding: 1.5rem 0;
+        }
+
+        body #wrapper .header .logo {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+
+        body #wrapper li a {
+            display: block;
+            color: #040c10;
+            background-color: #5fb0cc;
+            padding: 18px 57px;
+            transition: 0.3s;
+        }
+
+        body #wrapper li a:hover {
+            background-color: #fbf899;
+            transition: 0.3s;
+        }
+
+        body #wrapper li {
+            margin: .9rem;
+        }
+
+        body #wrapper .spacer {
+            display: block;
+            padding: 1.5rem 0;
+        }
+
+        body #wrapper .footer {
+            margin-bottom: 1rem;
+        }
+
+        body #wrapper .footer .footer-img {
+            width: 128px;
+            height: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="upper-diagonal">
+        <img src="assets/linhas.png">
+    </div>
+
+    <div id="lower-diagonal">
+        <img src="assets/linhas.png">
+    </div>
+
+    <div id="wrapper">
+        <div class="header">
+            <img class="logo" src="assets/DomosLogo.png"><br>
+            Domos
+        </div>
+
+        <li><a href="https://www.legendkeeper.com/app/clf771vyfnl090886mqn1swsd/clfr6fj1g0005033c9b9ye77a/">LegendKeeper</a></li>
+
+        <li><a href="https://forge-vtt.com/invite/dnd_domos/9a96508a-9640-481a-b74e-62ef42a027d7">Foundry (Tabletop Simulator)</a></li>
+
+        <li><a href="https://discord.gg/S7yZUAGu">Discord</a></li>
+
+        <div class="spacer"></div>
+        <div class="footer">           
+        </div>
+    </div>
+</body>
+</html>
